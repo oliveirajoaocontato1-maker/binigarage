@@ -566,6 +566,40 @@ section {
     margin-top: 2rem;
 }
 
+.about-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    height: 100%;
+}
+
+.about-img {
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: cover !important;
+    border-radius: 10px;
+    border: 2px solid var(--primary-red);
+    box-sizing: border-box !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-img.familia-img {
+    object-position: center 85% !important;
+}
+
+.about-img.casal-img {
+    object-position: center 20% !important;
+}
+
+.about-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(220, 20, 60, 0.3);
+}
+
 .stat {
     text-align: center;
 }
@@ -846,6 +880,31 @@ section {
 
     .about-stats {
         justify-content: center;
+    }
+    
+    .about-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .about-img {
+        width: 300px !important;
+        height: 300px !important;
+        object-fit: cover !important;
+        box-sizing: border-box !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        display: block !important;
+    }
+    
+    .about-img.familia-img {
+        object-position: center 85% !important;
+    }
+    
+    .about-img.casal-img {
+        object-position: center 65% !important;
     }
 
     .footer-content {

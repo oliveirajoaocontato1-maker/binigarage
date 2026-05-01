@@ -12,15 +12,9 @@
 <body>
     <!-- Custom Audio Controls - Top of Site -->
     <div class="video-audio-controls">
-        <button class="audio-toggle-btn" id="audioToggle">
+        <button type="button" class="audio-toggle-btn" id="audioToggle">
             <span class="audio-icon">🔇</span>
-            <span class="audio-text">Ativar Som</span>
         </button>
-        <div class="volume-control" id="volumeControl" style="display: none;">
-            <span class="volume-label">Volume:</span>
-            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50">
-            <span class="volume-value" id="volumeValue">50%</span>
-        </div>
     </div>
     
     <div class="particles">
@@ -35,6 +29,7 @@
         <div class="particle"></div>
         <div class="particle"></div>
     </div>
+
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
@@ -114,6 +109,7 @@
                             </button>
                         </div>
                     </div>
+
                     <div class="package-card">
                         <img src="pacote299.png" alt="Pacote Start Shine" class="package-image">
                         <div class="package-info">
@@ -124,6 +120,7 @@
                             </button>
                         </div>
                     </div>
+
                     <div class="package-card">
                         <img src="pacote549.jpeg" alt="Pacote Silver Care" class="package-image">
                         <div class="package-info">
@@ -134,6 +131,7 @@
                             </button>
                         </div>
                     </div>
+
                     <div class="package-card">
                         <img src="pacote849.jpeg" alt="Pacote Gold Shine" class="package-image">
                         <div class="package-info">
@@ -144,6 +142,7 @@
                             </button>
                         </div>
                     </div>
+
                     <div class="package-card">
                         <img src="pacote1300.jpeg" alt="Pacote Diamond Exclusive" class="package-image">
                         <div class="package-info">
@@ -154,6 +153,7 @@
                             </button>
                         </div>
                     </div>
+
                     <div class="package-card">
                         <img src="pacote220.png" alt="Pacote Combo Lojista" class="package-image">
                         <div class="package-info">
@@ -200,20 +200,22 @@
         </section>
 
         <section id="about" class="about">
-    <video class="video-background" autoplay muted loop playsinline id="bgVideo">
-        <source src="videofundo.mp4" type="video/mp4">
-        Seu navegador não suporta vídeo.
-    </video>
-    <div class="video-overlay"></div>
-    
-    <div class="container">
-        <div class="about-content">
+            <video class="video-background" muted loop playsinline id="bgVideo">
+                <source src="videofundo.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+
+            <div class="video-overlay"></div>
+            
+            <div class="container">
+                <div class="about-content">
                     <div class="about-text">
                         <h2 class="section-title">Quem Somos</h2>
                         <p>A Bini Garage nasceu de um sonho construído com coragem, trabalho e vontade de crescer. Começamos com o básico, mas sempre com algo essencial: dedicação em cada detalhe e amor pelo que fazemos.</p>
                         <p>Nossa trajetória foi construída dia após dia, enfrentando desafios, aprendendo com cada experiência e buscando evoluir sempre. O que começou pequeno, hoje se transforma em uma empresa que valoriza qualidade, confiança e excelência no cuidado automotivo.</p>
                         <p>Mais do que estética automotiva, entregamos zelo, compromisso e respeito com cada cliente que confia seu veículo em nossas mãos.</p>
                         <p>Seguimos crescendo, inovando e honrando nossa história, porque acreditamos que grandes resultados nascem de começos simples, feitos com verdade e determinação.</p>
+
                         <div class="about-stats">
                             <div class="stat">
                                 <span class="stat-number">11/04</span>
@@ -225,6 +227,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="about-image">
                         <div class="image-placeholder">
                             <span>🏆</span>
@@ -246,6 +249,7 @@
                                 <p>(11) 92120-3059</p>
                             </div>
                         </div>
+
                         <div class="contact-item">
                             <span class="contact-icon">📧</span>
                             <div>
@@ -253,7 +257,8 @@
                                 <p>binigarage0@gmail.com</p>
                             </div>
                         </div>
-                                                <div class="contact-item">
+
+                        <div class="contact-item">
                             <span class="contact-icon">⏰</span>
                             <div>
                                 <h4>Horário</h4>
@@ -261,11 +266,13 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="contact-form">
                         <form>
                             <input type="text" placeholder="Seu nome" required>
                             <input type="tel" placeholder="Seu telefone" required>
                             <input type="email" placeholder="Seu e-mail" required>
+
                             <select required>
                                 <option value="">Selecione um serviço ou pacote</option>
                                 <option value="polimento">Polimento Comercial e Técnico</option>
@@ -280,7 +287,9 @@
                                 <option value="diamond">Diamond Exclusive - R$ 1.300</option>
                                 <option value="combo">Combo Lojista - R$ 220</option>
                             </select>
+
                             <textarea placeholder="Mensagem (opcional)" rows="4"></textarea>
+
                             <button type="submit" class="submit-btn">Enviar Solicitação</button>
                         </form>
                     </div>
@@ -296,6 +305,7 @@
                     <img src="logobinigarage.png" alt="Bini Garage" class="footer-logo-img">
                     <p>Estética Automotiva Premium</p>
                 </div>
+
                 <div class="footer-social">
                     <p>Siga-nos nas redes sociais</p>
                     <div class="social-links">
@@ -307,6 +317,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2024 Bini Garage. Todos os direitos reservados.</p>
             </div>

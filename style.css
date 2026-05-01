@@ -488,7 +488,7 @@ section {
     position: fixed;
     top: 120px;
     right: 20px;
-    z-index: 1000;
+    z-index: 9999;
     background: rgba(0, 0, 0, 0.9);
     padding: 15px;
     border-radius: 50%;
@@ -500,12 +500,30 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    visibility: visible;
+    opacity: 1;
 }
 
-/* Hide audio controls on mobile */
+/* Audio controls responsive adjustments */
 @media (max-width: 768px) {
     .video-audio-controls {
-        display: none;
+        top: 100px !important;
+        right: 15px !important;
+        width: 45px !important;
+        height: 45px !important;
+        padding: 12px !important;
+        display: flex !important;
+        z-index: 9999 !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    .audio-icon {
+        font-size: 20px;
+        color: var(--white) !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 }
 
@@ -530,6 +548,9 @@ section {
 
 .audio-icon {
     font-size: 24px;
+    color: var(--white);
+    display: block;
+    line-height: 1;
 }
 
 .about-text p {

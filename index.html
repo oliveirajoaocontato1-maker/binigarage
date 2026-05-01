@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bini Garage - Estética Automotiva</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Custom Audio Controls - Top of Site -->
+    <div class="video-audio-controls">
+        <button class="audio-toggle-btn" id="audioToggle">
+            <span class="audio-icon">🔇</span>
+            <span class="audio-text">Ativar Som</span>
+        </button>
+        <div class="volume-control" id="volumeControl" style="display: none;">
+            <span class="volume-label">Volume:</span>
+            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50">
+            <span class="volume-value" id="volumeValue">50%</span>
+        </div>
+    </div>
+    
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logobinigarage.png" alt="Bini Garage" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#packages">Pacotes</a></li>
+                    <li><a href="#price-table">Preços</a></li>
+                    <li><a href="#leva-etraz">Leva e Traz</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">BINI GARAGE</h1>
+                <p class="hero-subtitle">Estética Automotiva Premium</p>
+                <p class="hero-description">Transformamos seu veículo em uma obra de arte</p>
+                <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    Agende seu serviço
+                </button>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🚗</div>
+                        <h3>Polimento</h3>
+                        <p>Polimento comercial e técnico para restaurar o brilho da sua pintura</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">✨</div>
+                        <h3>Lavagens Técnicas</h3>
+                        <p>Lavagem especializada com produtos e técnicas profissionais</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛡️</div>
+                        <h3>Cristalização</h3>
+                        <p>Cristalização de vidros e pintura para proteção duradoura</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3>Higienização</h3>
+                        <p>Detalhamento de motor, bancos e estofados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="packages" class="packages">
+            <div class="container">
+                <h2 class="section-title">Nossos Pacotes</h2>
+                <div class="packages-grid">
+                    <div class="package-card">
+                        <img src="pacote279.jpeg" alt="Pacote Bronze Protection" class="package-image">
+                        <div class="package-info">
+                            <h3 class="package-title">Bronze Protection</h3>
+                            <div class="package-price">R$ 279</div>
+                            <button class="package-btn" onclick="window.open('https://wa.me/5511921203059?text=Olá! Tenho interesse no pacote Bronze Protection de R$ 279.', '_blank')">
+                                Tenho Interesse
+                            </button>
+                        </div>
+                    </div>
+                    <div class="package-card">
+                        <img src="pacote299.png" alt="Pacote Start Shine" class="package-image">
+                        <div class="package-info">
+                            <h3 class="package-title">Start Shine</h3>
+                            <div class="package-price">R$ 299</div>
+                            <button class="package-btn" onclick="window.open('https://wa.me/5511921203059?text=Olá! Tenho interesse no pacote Start Shine de R$ 299.', '_blank')">
+                                Tenho Interesse
+                            </button>
+                        </div>
+                    </div>
+                    <div class="package-card">
+                        <img src="pacote549.jpeg" alt="Pacote Silver Care" class="package-image">
+                        <div class="package-info">
+                            <h3 class="package-title">Silver Care</h3>
+                            <div class="package-price">R$ 549</div>
+                            <button class="package-btn" onclick="window.open('https://wa.me/5511921203059?text=Olá! Tenho interesse no pacote Silver Care de R$ 549.', '_blank')">
+                                Tenho Interesse
+                            </button>
+                        </div>
+                    </div>
+                    <div class="package-card">
+                        <img src="pacote849.jpeg" alt="Pacote Gold Shine" class="package-image">
+                        <div class="package-info">
+                            <h3 class="package-title">Gold Shine</h3>
+                            <div class="package-price">R$ 849</div>
+                            <button class="package-btn" onclick="window.open('https://wa.me/5511921203059?text=Olá! Tenho interesse no pacote Gold Shine de R$ 849.', '_blank')">
+                                Tenho Interesse
+                            </button>
+                        </div>
+                    </div>
+                    <div class="package-card">
+                        <img src="pacote1300.jpeg" alt="Pacote Diamond Exclusive" class="package-image">
+                        <div class="package-info">
+                            <h3 class="package-title">Diamond Exclusive</h3>
+                            <div class="package-price">R$ 1.300</div>
+                            <button class="package-btn" onclick="window.open('https://wa.me/5511921203059?text=Olá! Tenho interesse no pacote Diamond Exclusive de R$ 1.300.', '_blank')">
+                                Tenho Interesse
+                            </button>
+                        </div>
+                    </div>
+                    <div class="package-card">
+                        <img src="pacote220.png" alt="Pacote Combo Lojista" class="package-image">
+                        <div class="package-info">
+                            <h3 class="package-title">Combo Lojista</h3>
+                            <div class="package-price">R$ 220</div>
+                            <button class="package-btn" onclick="window.open('https://wa.me/5511921203059?text=Olá! Tenho interesse no pacote Combo Lojista de R$ 220.', '_blank')">
+                                Tenho Interesse
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="price-table" class="price-table">
+            <div class="container">
+                <h2 class="section-title">Tabela de Preços</h2>
+                <div class="price-table-container">
+                    <img src="tabelaprecos.jpeg" alt="Tabela de Preços" class="price-table-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="leva-etraz" class="leva-etraz">
+            <div class="container">
+                <h2 class="section-title">Leva e Traz</h2>
+                <div class="leva-etraz-content">
+                    <img src="levaetraz.jpeg" alt="Serviço Leva e Traz" class="leva-etraz-image">
+                    <div class="leva-etraz-info">
+                        <h3>Conveniência total para você!</h3>
+                        <p>Oferecemos o serviço exclusivo de Leva e Traz para sua total comodidade. Buscamos seu veículo onde você estiver e entregamos de volta prontinho!</p>
+                        <ul class="leva-etraz-features">
+                            <li>🚗 Buscamos em qualquer local</li>
+                            <li>⏰ Agendamento flexível</li>
+                            <li>✅ Seguro e confiável</li>
+                            <li>🏆 Qualidade garantida</li>
+                        </ul>
+                        <button class="cta-button" onclick="window.open('https://wa.me/5511921203059?text=Olá! Tenho interesse no serviço de Leva e Traz.', '_blank')">
+                            Agendar Leva e Traz
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+    <video class="video-background" autoplay muted loop playsinline id="bgVideo">
+        <source src="videofundo.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+    </video>
+    <div class="video-overlay"></div>
+    
+    <div class="container">
+        <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="section-title">Quem Somos</h2>
+                        <p>A Bini Garage nasceu de um sonho construído com coragem, trabalho e vontade de crescer. Começamos com o básico, mas sempre com algo essencial: dedicação em cada detalhe e amor pelo que fazemos.</p>
+                        <p>Nossa trajetória foi construída dia após dia, enfrentando desafios, aprendendo com cada experiência e buscando evoluir sempre. O que começou pequeno, hoje se transforma em uma empresa que valoriza qualidade, confiança e excelência no cuidado automotivo.</p>
+                        <p>Mais do que estética automotiva, entregamos zelo, compromisso e respeito com cada cliente que confia seu veículo em nossas mãos.</p>
+                        <p>Seguimos crescendo, inovando e honrando nossa história, porque acreditamos que grandes resultados nascem de começos simples, feitos com verdade e determinação.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">11/04</span>
+                                <span class="stat-label">Data de Fundação</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">2024</span>
+                                <span class="stat-label">Ano de Início</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <span>🏆</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(11) 92120-3059</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>binigarage0@gmail.com</p>
+                            </div>
+                        </div>
+                                                <div class="contact-item">
+                            <span class="contact-icon">⏰</span>
+                            <div>
+                                <h4>Horário</h4>
+                                <p>Seg-Sáb: 09h-21h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <input type="text" placeholder="Seu nome" required>
+                            <input type="tel" placeholder="Seu telefone" required>
+                            <input type="email" placeholder="Seu e-mail" required>
+                            <select required>
+                                <option value="">Selecione um serviço ou pacote</option>
+                                <option value="polimento">Polimento Comercial e Técnico</option>
+                                <option value="lavagem">Lavagens Técnicas</option>
+                                <option value="cristalizacao">Cristalização de Vidros e Pintura</option>
+                                <option value="restauracao">Restauração de Farol</option>
+                                <option value="higienizacao">Higienização e Detalhamento</option>
+                                <option value="bronze">Bronze Protection - R$ 279</option>
+                                <option value="start">Start Shine - R$ 299</option>
+                                <option value="silver">Silver Care - R$ 549</option>
+                                <option value="gold">Gold Shine - R$ 849</option>
+                                <option value="diamond">Diamond Exclusive - R$ 1.300</option>
+                                <option value="combo">Combo Lojista - R$ 220</option>
+                            </select>
+                            <textarea placeholder="Mensagem (opcional)" rows="4"></textarea>
+                            <button type="submit" class="submit-btn">Enviar Solicitação</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logobinigarage.png" alt="Bini Garage" class="footer-logo-img">
+                    <p>Estética Automotiva Premium</p>
+                </div>
+                <div class="footer-social">
+                    <p>Siga-nos nas redes sociais</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/binigarage/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                            <svg class="social-icon instagram-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bini Garage. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5511921203059?text=Olá! Tenho interesse nos serviços da Bini Garage. Gostaria de mais informações." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
